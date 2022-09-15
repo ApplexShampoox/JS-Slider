@@ -14,21 +14,11 @@ function slide() {
   })
 };
 
-function slideDown() {
-  sliderItems.forEach(item => {
-    if (this.dataset.tabsHandler === item.dataset.tabsHandler) {
-      item.classList.add('active')
-    } else {
-      item.classList.remove('active')
-    }
-  })
-};
-
 for (const tab of tabsHandlerElems) {
   tab.addEventListener('click', slide)
 };
 for (const point of tabsPoints) {
-  point.addEventListener('click', slideDown)
+  point.addEventListener('click', slide)
 };
 
 leftArrow.addEventListener('click', () => {
