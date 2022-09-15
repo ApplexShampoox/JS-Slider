@@ -22,8 +22,8 @@ for (const point of tabsPoints) {
 };
 
 leftArrow.addEventListener('click', () => {
-  let activeSliders = document.querySelectorAll('.active');
-  let slideIndex = document.querySelector('.active').getAttribute('data-tabs-handler');
+  let activeSliders = document.querySelectorAll('.active[data-tabs-handler]');
+  let slideIndex = document.querySelector('.active').dataset.tabsHandler;
   let activeSlides = document.querySelectorAll((`[data-tabs-handler='${(slideIndex - 1)}']`));
   let last = document.querySelectorAll((`[data-tabs-handler='${tabsHandlerElems.length}']`));
 
@@ -37,8 +37,8 @@ leftArrow.addEventListener('click', () => {
 })
 
 rightArrow.addEventListener('click', () => {
-  let activeSliders = document.querySelectorAll('.active');
-  let slideIndex = document.querySelector('.active').getAttribute('data-tabs-handler');
+  let activeSliders = document.querySelectorAll('.active[data-tabs-handler]');
+  let slideIndex = document.querySelector('.active').dataset.tabsHandler;
   let activeSlides = document.querySelectorAll((`[data-tabs-handler='${(+slideIndex + 1)}']`));
   let last = document.querySelectorAll((`[data-tabs-handler='1']`));
 
