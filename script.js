@@ -1,65 +1,22 @@
 const tabsHandlerElems = document.querySelectorAll('.tabs_elem');
 const tabsPoints = document.querySelectorAll('.point');
-const tabsPhotos = document.querySelectorAll('.photo');
-const tabsSpecs = document.querySelectorAll('.specs');
+const sliderItems = document.querySelectorAll((`[data-tabs-handler]`));
 const leftArrow = document.querySelector('.left_arrow');
 const rightArrow = document.querySelector('.right_arrow');
 
 function slide() {
-  tabsHandlerElems.forEach(item => {
+  sliderItems.forEach(item => {
     if (item.dataset.tabsHandler === this.dataset.tabsHandler) {
       item.classList.add('active');
     } else {
       item.classList.remove('active');
-    }
-  })
-  tabsPhotos.forEach(item => {
-    if (item.dataset.tabsHandler === this.dataset.tabsHandler) {
-      item.classList.add('active')
-    } else {
-      item.classList.remove('active')
-    }
-  })
-  tabsPoints.forEach(item => {
-    if (item.dataset.tabsHandler === this.dataset.tabsHandler) {
-      item.classList.add('active')
-    } else {
-      item.classList.remove('active')
-    }
-  })
-  tabsSpecs.forEach(item => {
-    if (item.dataset.tabsHandler === this.dataset.tabsHandler) {
-      item.classList.add('active')
-    } else {
-      item.classList.remove('active')
     }
   })
 };
 
 function slideDown() {
-  tabsPoints.forEach(item => {
+  sliderItems.forEach(item => {
     if (this.dataset.tabsHandler === item.dataset.tabsHandler) {
-      item.classList.add('active')
-    } else {
-      item.classList.remove('active')
-    }
-  })
-  tabsHandlerElems.forEach(item => {
-    if (item.dataset.tabsHandler === this.dataset.tabsHandler) {
-      item.classList.add('active');
-    } else {
-      item.classList.remove('active');
-    }
-  })
-  tabsPhotos.forEach(item => {
-    if (item.dataset.tabsHandler === this.dataset.tabsHandler) {
-      item.classList.add('active')
-    } else {
-      item.classList.remove('active')
-    }
-  })
-  tabsSpecs.forEach(item => {
-    if (item.dataset.tabsHandler === this.dataset.tabsHandler) {
       item.classList.add('active')
     } else {
       item.classList.remove('active')

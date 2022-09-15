@@ -91,8 +91,14 @@ button {
   display: flex;
   margin-bottom: 40px;
 }
+
 .tabs button:not(:last-child) {
   margin-right: 61px;
+}
+
+.tabs_elem:hover {
+  transition: color 0.7s linear;
+  color: $base-orange-hover;
 }
 .tabs_elem.active {
   color: $base-orange;
@@ -106,19 +112,28 @@ button {
 .photo.active {
   display: initial;
 }
+.right_arrow_button:hover {
+  transform: scale(1.2);
+  transition: transform 0.7s linear;
+}
 .left_arrow_button {
   margin-right: 29px;
+}
+.left_arrow_button:hover {
+  transform: scale(1.2);
+  transition: transform 0.7s linear;
 }
 .point {
   width: 9.57px;
   height: 9.57px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.3);
+  background: $base-white-inactive;
 }
 .point.active {
-  background: rgba(255, 255, 255, 1);
+  transform: scale(1.2);
+  transition: transform 0.7s linear;
+  background: $base-white;
 }
-
 .slider {
   display: flex;
   flex-direction: row;
