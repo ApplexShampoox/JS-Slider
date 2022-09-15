@@ -1,0 +1,12 @@
+{
+  "name": "slider",
+  "version": "1.0.0",
+  "description": "slider homework for skillfactory",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -w scss/ -o css/ --output-style compressed "
+  },
+  "author": "Pavel Bolotov",
+  "license": "ISC"
+}

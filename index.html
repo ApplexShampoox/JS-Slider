@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Yeseva+One&display=swap" rel="stylesheet">
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <div class="wrapper">
+      <div class="card">
+        <h2>COMPLETED <br /> <span class="h2-line">PROJECTS</span> </h2>
+        <p class="description">Only a small part of the work performed by our company is presented <br> on the site. For
+          14
+          years on in the construction <br>
+          market we have made happy more than 1000 families</p>
+        <div class="specs active" data-tabs-handler="1">
+          <div class="spec_city">
+            <h3>CITY:</h3><span>Rostov-on-Don <br>
+              LCD admiral</span>
+          </div>
+          <div class="spec_area">
+            <h3>APARTMENT AREA:</h3><span>81 m2</span>
+          </div>
+          <div class="spec_time">
+            <h3>REPAIR TIME:</h3><span>3.5 months</span>
+          </div>
+          <div class="spec_cost">
+            <h3>REPAIR COST:</h3><span>Upon request</span>
+          </div>
+        </div>
+
+        <div class="specs" data-tabs-handler="2">
+          <div class="spec_city">
+            <h3>CITY:</h3><span>Sochi <br>
+              Thieves</span>
+          </div>
+          <div class="spec_area">
+            <h3>APARTMENT AREA:</h3><span>105 m2</span>
+          </div>
+          <div class="spec_time">
+            <h3>REPAIR TIME:</h3><span>4 months</span>
+          </div>
+          <div class="spec_cost">
+            <h3>REPAIR COST:</h3><span>Upon request</span>
+          </div>
+        </div>
+
+        <div class="specs" data-tabs-handler="3">
+          <div class="spec_city">
+            <h3>CITY:</h3><span>Rostov-on-Don<br>
+              Patriotic</span>
+          </div>
+          <div class="spec_area">
+            <h3>APARTMENT AREA:</h3><span>93 m2</span>
+          </div>
+          <div class="spec_time">
+            <h3>REPAIR TIME:</h3><span>3 months</span>
+          </div>
+          <div class="spec_cost">
+            <h3>REPAIR COST:</h3><span>Upon request</span>
+          </div>
+        </div>
+        <div class="slider">
+          <button class="left_arrow_button"><img src="img/arrow_left.svg" alt="slide left" class="left_arrow"></button>
+          <div class="points">
+            <button class="point active" data-tabs-handler="1"></button>
+            <button class="point" data-tabs-handler="2"></button>
+            <button class="point" data-tabs-handler="3"></button>
+          </div>
+
+          <button class="right_arrow_button"><img src="img/arrow_right.svg" alt="slide right"
+              class="right_arrow"></button>
+        </div>
+      </div>
+      <div class="photos">
+        <div class="tabs">
+          <button>
+            <h4 class="tabs_elem active" data-tabs-handler="1">ROSTOV-ON-DON, ADMIRAL</h4>
+          </button>
+          <button>
+            <h4 class="tabs_elem" data-tabs-handler="2">SOCHI THIEVES</h4>
+          </button>
+          <button>
+            <h4 class="tabs_elem" data-tabs-handler="3">ROSTOV-ON-DON PATRIOTIC</h4>
+          </button>
+        </div>
+
+        <img src="img/project_1.png" alt="first project photo" width="679" height="482" class="photo active"
+          data-tabs-handler="1">
+        <img src="img/project_2.png" alt="second project photo" width="679" height="482" class="photo"
+          data-tabs-handler="2">
+        <img src="img/project_3.png" alt="third project photo" width="679" height="482" class="photo"
+          data-tabs-handler="3">
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
